@@ -1,10 +1,17 @@
 package it.unical.informatica.webapp24.recensioniristoranti.model;
 
 public class Ristorante {
-
     String nome;
     String descrizione;
     String ubicazione;
+
+    public Ristorante(){}
+
+    public Ristorante(String nome, String descrizione, String ubicazione){
+        this.nome = nome;
+        this.descrizione = descrizione;
+        this.ubicazione = ubicazione;
+    }
 
     public String getNome() {
         return nome;
@@ -29,4 +36,11 @@ public class Ristorante {
     public void setUbicazione(String ubicazione) {
         this.ubicazione = ubicazione;
     }
+
+    public static void main(String[] args) {
+        Ristorante r1 = new Ristorante("Nome", "Si mangia pizza", "Cosenza");
+        r1.setNome("Girone dei golosi");
+    }
+
+
 }
